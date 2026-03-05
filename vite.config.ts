@@ -4,8 +4,8 @@ import path from 'path'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// GitHub Pages repo name – change if your repo has a different name
-const REPO_NAME = 'Annai'
+// GitHub Pages: must match repo name (e.g. https://user.github.io/AnnaiSeaFood/)
+const REPO_NAME = 'AnnaiSeaFood'
 
 export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? `/${REPO_NAME}/` : '/',

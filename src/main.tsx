@@ -1,16 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 
-// BASE_URL is set by Vite from the "base" config (e.g. /Annai/ for GitHub Pages)
-const basename = import.meta.env.BASE_URL?.replace(/\/$/, '') ?? ''
-
+// HashRouter works on GitHub Pages without 404 or base path routing issues
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename={basename}>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 )
