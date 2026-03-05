@@ -33,15 +33,15 @@ const variants: Record<Variant, string> = {
 }
 
 export function Button(props: ButtonProps) {
-  const { variant = 'primary', children, className = '', ...rest } = props as any
-  const variantClasses = variants[variant]
+  const { variant = 'primary', children, className = '', ...rest } = props
+  const variantClasses = variants[variant as Variant]
 
   const combined = `${baseClasses} ${variantClasses} px-5 py-2 ${className}`
 
   if ('to' in props && props.to) {
-    const linkProps = rest as ButtonAsLink
+    const { to, ...linkProps } = props as ButtonAsLink
     return (
-      <Link to={props.to} className={combined} {...linkProps}>
+      <Link to={to} className={combined} {...linkProps}>
         {children}
       </Link>
     )

@@ -2,7 +2,7 @@ import { PageHero } from '../components/layout/PageHero'
 import { Container } from '../components/layout/Container'
 import { SectionHeading } from '../components/typography/SectionHeading'
 import { FadeInSection } from '../components/motion/FadeInSection'
-import { company, mission, vision, goals, pillars, sustainability } from '../data/site'
+import { mission, vision, goals, pillars, sustainability } from '../data/site'
 
 const facilityImage =
   'https://images.pexels.com/photos/3738095/pexels-photo-3738095.jpeg?auto=compress&cs=tinysrgb&w=1600'
