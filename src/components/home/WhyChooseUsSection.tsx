@@ -28,7 +28,7 @@ const features = [
 
 export function WhyChooseUsSection() {
   return (
-    <section className="border-b border-slate-200 bg-slate-50">
+    <section className="border-b border-slate-200 bg-white">
       <Container className="py-16 md:py-20">
         <FadeInSection>
           <div className="flex flex-col gap-10">

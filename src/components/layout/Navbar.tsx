@@ -20,7 +20,7 @@ export function Navbar() {
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           <Link to="/" className="flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#0B3C5D] text-white">
+            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#0077B6] text-white">
               <span className="text-lg font-semibold">AN</span>
             </div>
             <div className="flex flex-col">
@@ -42,8 +42,8 @@ export function Navbar() {
                   [
                     'text-sm font-medium transition-colors',
                     isActive
-                      ? 'text-[#0B3C5D]'
-                      : 'text-slate-600 hover:text-slate-900',
+                      ? 'text-[#0077B6]'
+                      : 'text-slate-600 hover:text-[#0077B6]',
                   ].join(' ')
                 }
               >

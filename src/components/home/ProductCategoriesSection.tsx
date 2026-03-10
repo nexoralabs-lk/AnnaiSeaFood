@@ -9,7 +9,7 @@ export function ProductCategoriesSection() {
   const featured = products
 
   return (
-    <section className="border-b border-slate-200 bg-white">
+    <section className="border-b border-slate-200 bg-[#F5F7FA]">
       <Container className="py-16 md:py-20">
         <div className="flex flex-col gap-10">
           <FadeInSection>
@@ -40,7 +40,7 @@ export function ProductCategoriesSection() {
                       className="h-full w-full object-cover transition duration-500 hover:scale-105"
                       loading="lazy"
                     />
-                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/50 to-transparent" />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/25 to-transparent" />
                   </div>
                   <div className="flex flex-1 flex-col gap-2 px-4 pb-4 pt-3">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#0F7C82]">

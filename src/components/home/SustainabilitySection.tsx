@@ -5,7 +5,7 @@ import { sustainability } from '../../data/site'
 
 export function SustainabilitySection() {
   return (
-    <section className="border-b border-slate-200 bg-[#0B3C5D] text-white">
+    <section className="border-b border-slate-200 bg-[#0077B6] text-white">
       <Container className="py-16 md:py-20">
         <FadeInSection>
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] lg:items-center">

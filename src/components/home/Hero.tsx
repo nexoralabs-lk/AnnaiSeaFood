@@ -8,27 +8,27 @@ const heroBackground =
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-slate-200 bg-slate-950 text-white">
+    <section className="relative overflow-hidden border-b border-slate-200 bg-slate-900 text-white">
       <div
-        className="absolute inset-0 opacity-60"
+        className="absolute inset-0 opacity-40"
         style={{
           backgroundImage: `url(${heroBackground})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-[#0B3C5D]/80 to-slate-900/70" />
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900/60 via-[#0077B6]/50 to-slate-900/40" />
 
       <Container className="relative z-10 py-16 md:py-24 lg:py-28">
         <div className="grid gap-12 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] md:items-center">
           <FadeInSection>
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300/90">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#00B4D8]/90">
               Northern Sri Lanka • Aqua Farming • International Seafood Trade
             </p>
             <h1 className="mt-4 max-w-xl font-heading text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
               {company.tagline}
             </h1>
-            <p className="mt-5 max-w-xl text-sm leading-relaxed text-slate-100/85 md:text-base">
+            <p className="mt-5 max-w-xl text-sm leading-relaxed text-slate-100/90 md:text-base">
               {company.description} We build direct relationships with fishermen
               so they earn higher value for their catch — supporting a sustainable
               and secure livelihood for the local community.
@@ -41,11 +41,7 @@ export function Hero() {
               >
                 View Products
               </Button>
-              <Button
-                to="/contact"
-                variant="secondary"
-                className="border-white/30 bg-white/10 text-white hover:bg-white/20"
-              >
+              <Button to="/contact" variant="secondary">
                 Request Export Quote
               </Button>
               <p className="mt-2 text-xs font-medium uppercase tracking-[0.2em] text-slate-200/90">
@@ -55,8 +51,8 @@ export function Hero() {
           </FadeInSection>
 
           <FadeInSection className="md:justify-self-end">
-            <div className="rounded-3xl border border-cyan-100/30 bg-slate-950/60 p-5 shadow-[0_40px_80px_rgba(15,118,143,0.55)] backdrop-blur">
-              <div className="flex items-center justify-between gap-4 border-b border-slate-800/70 pb-4">
+            <div className="rounded-3xl border border-[#00B4D8]/20 bg-slate-900/70 p-5 shadow-[0_28px_60px_rgba(0,119,182,0.55)] backdrop-blur">
+              <div className="flex items-center justify-between gap-4 border-b border-slate-800/60 pb-4">
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-cyan-300/80">
                     Why Annai

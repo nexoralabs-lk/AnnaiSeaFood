@@ -4,7 +4,7 @@ import { FadeInSection } from '../motion/FadeInSection'
 
 export function HomeCtaSection() {
   return (
-    <section className="bg-[#0B3C5D] text-white">
+    <section className="bg-[#0077B6] text-white">
       <Container className="py-14 md:py-16">
         <FadeInSection className="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
           <div>
@@ -27,7 +27,7 @@ export function HomeCtaSection() {
             <Button
               to="/contact"
               variant="secondary"
-              className="bg-transparent text-white"
+              className="border-white/70 bg-transparent text-white hover:bg-white/10"
             >
               Contact Sales
             </Button>

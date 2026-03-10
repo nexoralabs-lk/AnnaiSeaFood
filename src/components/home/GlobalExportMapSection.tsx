@@ -9,13 +9,13 @@ const markets = ['Japan', 'Singapore', 'United Arab Emirates', 'Europe']
 
 export function GlobalExportMapSection() {
   return (
-    <section className="border-b border-slate-200 bg-slate-900 text-white">
+    <section className="border-b border-slate-200 bg-[#0077B6] text-white">
       <Container className="py-16 md:py-20">
         <FadeInSection>
           <div className="grid gap-10 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] md:items-center">
-            <div className="relative overflow-hidden rounded-3xl border border-slate-700 bg-slate-900/60 shadow-2xl">
+            <div className="relative overflow-hidden rounded-3xl border border-slate-700/70 bg-slate-900/60 shadow-2xl">
               <div
-                className="absolute inset-0 opacity-60"
+                className="absolute inset-0 opacity-35"
                 style={{
                   backgroundImage: `url(${mapBackground})`,
                   backgroundSize: 'cover',
@@ -51,6 +51,7 @@ export function GlobalExportMapSection() {
                 eyebrow="Global Reach"
                 title="Designed for cross-continent seafood programs."
                 description="From Japanese auction houses to European wholesalers and UAE foodservice distributors, our team understands the documentation, labeling, and cut-style requirements of each market."
+                variant="dark"
               />
               <dl className="mt-6 grid grid-cols-2 gap-4 text-xs text-slate-200">
                 <div className="rounded-2xl bg-slate-800/60 p-4">

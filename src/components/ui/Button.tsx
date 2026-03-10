@@ -22,14 +22,15 @@ type ButtonAsLink = BaseProps & {
 type ButtonProps = ButtonAsButton | ButtonAsLink
 
 const baseClasses =
-  'inline-flex items-center justify-center rounded-full text-sm font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0B3C5D] disabled:opacity-60 disabled:cursor-not-allowed'
+  'inline-flex items-center justify-center rounded-xl text-sm font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0077B6] disabled:opacity-60 disabled:cursor-not-allowed'
 
 const variants: Record<Variant, string> = {
   primary:
-    'bg-[#0B3C5D] text-white shadow-md hover:bg-[#0f4f7a] hover:-translate-y-0.5 hover:shadow-lg',
+    'bg-[#FF7F50] text-white shadow-md hover:bg-[#ff6b3a] hover:-translate-y-0.5 hover:shadow-lg',
   secondary:
-    'bg-white text-[#0B3C5D] border border-slate-200 hover:border-slate-300 hover:bg-slate-50',
-  ghost: 'bg-transparent text-slate-700 hover:bg-slate-100',
+    'bg-white text-[#0077B6] border border-[#00B4D8]/60 hover:border-[#00B4D8] hover:bg-[#E3F6FF]',
+  ghost:
+    'bg-transparent text-slate-700 hover:bg-slate-100 hover:text-[#0077B6]',
 }
 
 export function Button(props: ButtonProps) {
