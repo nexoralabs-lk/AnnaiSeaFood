@@ -4,7 +4,7 @@ import { SectionHeading } from '../typography/SectionHeading'
 import { company } from '../../data/site'
 
 const facilityImage =
-  'https://images.pexels.com/photos/3738093/pexels-photo-3738093.jpeg?auto=compress&cs=tinysrgb&w=1600'
+  'https://images.pexels.com/photos/3296273/pexels-photo-3296273.jpeg?auto=compress&cs=tinysrgb&w=1600'
 
 export function AboutSection() {
   return (

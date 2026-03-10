@@ -2,12 +2,14 @@
 
 @layer base {
   :root {
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-      sans-serif;
+    /* Deep Marine theme typography */
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont,
+      'Segoe UI', sans-serif;
   }
 
   body {
-    @apply bg-[#F5F7FA] text-slate-900 antialiased;
+    /* Deep marine background with crisp white foreground by default */
+    @apply min-h-screen bg-[#001422] text-slate-100 antialiased;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -24,8 +26,46 @@
   h5,
   h6,
   .font-heading {
-    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont,
-      'Segoe UI', sans-serif;
+    font-family: 'Playfair Display', ui-serif, Georgia, 'Times New Roman',
+      serif;
+  }
+
+  /* Utility classes for the deep marine theme */
+
+  .page-shell {
+    @apply min-h-screen bg-gradient-to-b from-[#001f3f] via-[#001422] to-[#000813];
+  }
+
+  .section-light {
+    @apply bg-[#FFFFFF] text-[#1A1A1A];
+  }
+
+  .section-muted {
+    @apply bg-[#F5F7FA] text-[#1A1A1A];
+  }
+
+  .section-dark {
+    @apply bg-[#001f3f] text-white;
+  }
+
+  .glass-nav {
+    @apply border border-white/10 bg-[#001422]/70 backdrop-blur-md shadow-lg;
+  }
+
+  .marine-card {
+    @apply rounded-xl border border-white/5 bg-white/5 shadow-[0_18px_40px_rgba(0,0,0,0.35)];
+  }
+
+  .marine-card-light {
+    @apply rounded-xl border border-slate-100 bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)];
+  }
+
+  .btn-primary-marine {
+    @apply inline-flex items-center justify-center rounded-xl bg-[#C5A059] px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-[#b28d43] hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#C5A059];
+  }
+
+  .btn-secondary-marine {
+    @apply inline-flex items-center justify-center rounded-xl border border-white/40 bg-transparent px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white;
   }
 
   @keyframes float-soft {
